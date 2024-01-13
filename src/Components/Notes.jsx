@@ -1,3 +1,4 @@
+
 // Notes.jsx
 import React, { useState } from 'react';
 import './Style/Notes.css';
@@ -33,14 +34,14 @@ const Notes = (props) => {
           <input
             type='text'
             placeholder='Title'
-            autoComplete='off '
+            autoComplete='off'
             value={note.title}
             name='title'
             onChange={InputEvent}
           />
           <textarea
-            rows=""
-            column=""
+            rows="3"
+            columns="30"
             placeholder='Write a note...'
             value={note.content}
             name='content'
@@ -54,3 +55,4 @@ const Notes = (props) => {
 }
 
 export default Notes;
+
